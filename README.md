@@ -1,15 +1,15 @@
 # Introduction to the shopping list project
 
-The project is a shopping list application. This is a very basic project that uses vanilla javascript, html and css. Here the user is able to add, filter and remove all the list items from the list. This project is based on the javascript course that I am learning from. The designs and feature ideas are taken from the course but the code implementation is done by me. The project is not entirely responsive so please forgive me if the layout doesen't look like as expected.
+The project is a shopping list application. This is a very basic project that uses vanilla JavaScript, HTML, and CSS. Here the user is able to add, filter, and remove all the list items from the list. This project is based on the javascript course that I am learning from. The designs and feature ideas are taken from the course but the code implementation is done by me. The project is not entirely responsive so please forgive me if the layout doesn't look like as expected.
 
-**Note: If you have any suggestions on how to improve the code quality or any better way to implement these features or about how to write a better README file, then feel free to drop your suggestion. I will be extrmely grateful**
+**Note: If you have any suggestions on how to improve the code quality or any better way to implement these features or how to write a better README file, then feel free to drop your suggestion. I will be extremely grateful**
 
 ### Important Learnings from this project
 
 - Learned about `composedPath()` method available in the `event` object when trying to delete an item from the list.
 - Implemented `event delegation` buttons for deleting the items from the list.
 - Implemented `localStorage` to make the list items persist when the browser is reloaded.
-- Implemented other basic features such as adding an item on clicking the `Add Item` button and removing all the items at once at the click of `Clear All` button.
+- Implemented other basic features such as adding an item by clicking the `Add Item` button and removing all the items at once at the click of `Clear All` button.
 
 ### Articles on the topics learned from this project
 
@@ -81,7 +81,7 @@ In this updated code, the `populateListFromLocalStorage` function is called when
 
 - Implementing the `delete item` functionality with the help of `event delegation` concept
 
-The issue was resolved by referring the article provided by [freecodecamp](https://www.freecodecamp.org/news/event-delegation-javascript/). Another thing that I learned while implementing this functionality was about the `composedPath()` method offered by the `event` object. You can refer the below code and use the [mdn-docs](https://developer.mozilla.org/en-US/docs/Web/API/Event/composedPath) to learn more about `composedPath()` method. You can refer the entire source code if you want more clarity on how this code works.
+The issue was resolved by referring to the article provided by [freecodecamp](https://www.freecodecamp.org/news/event-delegation-javascript/). Another thing that I learned while implementing this functionality was about the `composedPath()` method offered by the `event` object. You can refer to the below code and use the [mdn-docs](https://developer.mozilla.org/en-US/docs/Web/API/Event/composedPath) to learn more about `composedPath()` method. You can refer to the entire source code if you want more clarity on how this code works.
 
 ```javascript
 function deleteItem(e) {
@@ -101,3 +101,4 @@ function deleteItem(e) {
 }
 itemList.addEventListener('click', deleteItem)
 ```
+Here's a link to the deployed application: [Shopping-List](https://shopping-list-aayush.netlify.app)
